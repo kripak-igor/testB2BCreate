@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Балтийский центр лазерной резки</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <img src="./images/logo.png" сlass="logo" alt="logo" />
+    <div class="body_2_400">192102, г. Санкт-Петербург, ул.Самойловой д.5, ПСК "Нобелевская дорога"</div>
+    <a class="body_2_400">info@bclr.ru</a>
+    <a class="number">+7 (812) 385-52-57</a>
+    <button class="btn"><span>заказать звонок</span></button>
+  </header>
+
+  <div class="mob_header">
+      <img src="./images/logo.png" сlass="logo" alt="logo" />
+      <div>
+        <a class="body_2_400">info@bclr.ru</a>
+        <a class="number">+7 (812) 385-52-57</a>
+        <div class="body_2_400">192102, г. Санкт-Петербург, ул.Самойловой д.5, ПСК "Нобелевская дорога"</div>
+        <button class="btn"><span>заказать звонок</span></button>
+      </div>
+    </div>
+  </div>
+
+  <section class="section1">
+    <h1><span class="red">Металлические корпуса</span><br /> для вашего бизнеса с лазерной<br /> гравировкой:
+      <br /><span class="w500">от небольших коммутаторов <br />до огромных терминалов</span>
+    </h1>
+    <div class="list">
+      <ul>
+        <li>На 100% сделано в России</li>
+        <li>3-х этапный производственный<br />контроль и качество стандарта ГОСТ</li>
+        <li>Более 80 решений под любую задачу и сферу бизнеса</li>
+        <li>Запустим серийное производство в течение 5 дней</li>
+      </ul>
+    </div>
+    <button class="btn"><span>заказать расчет стоимости</span></button>
+    <div class="result">
+      <p>Бескомпромиссный <br/> результат от компании</p>
+      <div>
+        <div class="circle">10</div>
+        <p>летним <br/> опытом</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section2">
+    <figure>
+      <img src="./images/advantages1.png"/>
+      <p>Нет эскиза?</p>
+      <figcaption>Разработаем чертежи, согласуем и изготовим опытный образец</figcaption>
+    </figure>
+    <figure>
+      <img src="./images/advantages2.png"/>
+      <p>30 и более лет</p>
+      <figcaption>Могут прослужить наши корпуса, если придерживаться условий эксплуатации</figcaption>
+    </figure>
+    <figure>
+      <img src="./images/advantages3.png"/>
+      <p>Погрешность - 0%</p>
+      <figcaption>Разработаем чертежи,согласуем и изготовим</figcaption>
+    </figure>
+    <figure>
+      <img src="./images/advantages4.png"/>
+      <p>Форма и сложность <br/> любые </p>
+      <figcaption>Изготовим конфигурацию необходимую под Ваши задачи</figcaption>
+    </figure>
+    <figure>
+      <img src="./images/advantages5.png"/>
+      <p>Продумываем <br/>каждую мелочь </p>
+      <figcaption>Комплектуем приварными шпильками или запрессованными гайками, ставим пломбы от несанкционированного доступа</figcaption>
+    </figure>
+  </section>
+
+  <section class="section3">
+    <h2><span class="red">Топ - 5 направлений</span> которые мы для<br/>вас прокачаем</h2>
+    <p>Серийное производство по чертежам клиента<br/>или с нашей разработкой</p>
+    <div class="directions">
+      <div onClick="setSelect(this, '01')" class="selected_direction">Электротехника</div>
+      <div onClick="setSelect(this, '02')">Телекоммуникация</div>
+      <div onClick="setSelect(this, '03')">Медицина</div>
+      <div onClick="setSelect(this, '04')">Безопасность</div>
+      <div onClick="setSelect(this, '05')">Медиа</div>
+    </div>
+    <div class="product_preview">
+      <div class="product_number" id="product_number">01</div>
+      <div class="product_title" id="product_title">Электротехника</div>
+      <div class="images">
+        <img src="./images/section1.png" id="main_preview" alt="Изображение"/>
+        <div class="images_list">
+          <div onClick="selectImage(this)" class="images_list_item">
+            <img src="./images/product_preview1.png" alt="Изображение"/>
+          </div>
+          <div onClick="selectImage(this)" class="images_list_item">
+            <img src="./images/product_preview2.png" alt="Изображение"/>
+          </div>
+          <div onClick="selectImage(this)" class="images_list_item selected_preview">
+            <img src="./images/section1.png" alt="Изображение"/>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>ИБП стоечного и напольного размещения / Корпуса электротехнического оборудования в ассортименте</h3>
+        <p>Корпус из листов алюминия или оцинкованной стали. Толщина от 1 мм до 1.5 мм. Прецизионная точность лазерной резки, запрессовка крепежа, контактная и TIG сварка, заклепки. Покрытие порошковой краской RAL. Нанесение надписей методом лазерной гравировки</p>
+        <button class="btn"><span>рассчитать стоимость</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section4">
+    <h2>Вот почему <span class="red">96% клиентов<br/>заказывают у нас</span> во второй раз</h2>
+    <p>Серийное производство по чертежам клиента<br/>или с нашей разработкой</p>
+    <div class="reasons">
+      <div class="reason">
+        <img class="reason_img" src="./images/reason1.png"/>
+        <div class="reason_content">
+          <h3>Бесплатная доставка</h3>
+          <p>при заказе партии от 500 шт</p>
+        </div>
+      </div>
+      <div class="reason">
+        <img class="reason_img" src="./images/reason2.png"/>
+        <div class="reason_content">
+          <h3>Молниеносная скорость</h3>
+          <p>запустим согласованный проект в производство уже на следующий день</p>
+        </div>
+      </div>
+      <div class="reason">
+        <img class="reason_img" src="./images/reason3.png"/>
+        <div class="reason_content">
+          <h3>100% повторяемость</h3>
+          <p>современный технологический процесс - ксерокс на любое количество изделий</p>
+        </div>
+      </div>
+      <div class="reason">
+        <img class="reason_img" src="./images/reason4.png"/>
+        <div class="reason_content">
+          <h3>Делаем “под ключ”</h3>
+          <p>производство полного цикла, от эскиза карандашом до готовой продукции</p>
+        </div>
+      </div>
+      <div class="reason">
+        <img class="reason_img" src="./images/reason5.png"/>
+        <div class="reason_content">
+          <h3>Вышлем образец </h3>
+          <p>бесплатно при предоплате партии корпусов от 150 шт</p>
+        </div>
+      </div>
+      <div class="reason">
+        <img class="reason_img" src="./images/reason6.png"/>
+        <div class="reason_content">
+          <h3>Храним готовые изделия</h3>
+          <p>сэкономим место и привезем на ваш объект по необходимости </p>
+        </div>
+      </div>
+      <div class="machine"></div>
+    </div>
+
+    
+  </section>
+
+
+  <script>
+    function setSelect(event, val) {
+      document.querySelector("div.selected_direction").classList.remove('selected_direction');
+      event.classList.add('selected_direction');
+      document.getElementById('product_title').innerText = event.innerText;
+      document.getElementById('product_number').innerText = val;
+    }
+
+    function selectImage(event) {
+      document.querySelector("div.selected_preview").classList.remove('selected_preview');
+      event.classList.add('selected_preview');
+      document.getElementById('main_preview').src = event.querySelector('img').src;
+    }
+  </script>
+</body>
+
+</html>
